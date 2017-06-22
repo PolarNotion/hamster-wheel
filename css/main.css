@@ -246,3 +246,36 @@ a.text-white:hover {
   margin-right: 5px;
 }
 
+/*SUBSCRIPTION FOOTER*/
+
+#subscription_footer {
+    padding: 40px;
+    background-color: #222;
+    color: white;
+}
+#subscription_footer label {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#subscription_footer h2 {
+    color: white;
+}
+#subscription_footer h2::after {
+    content: " ";
+    border-bottom: 1px solid white;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+#subscription_footer .btn-white-outline.btn-lg {
+    text-transform: uppercase;
+}
+#subscription_footer .btn-white-outline.btn-lg:hover,
+#subscription_footer .btn-white-outline.btn-lg:active {
+    color: #222;
+    text-transform: uppercase;
+
