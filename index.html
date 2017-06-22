@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <title>Hamsterwheel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hamsterwheel : Infinite Scroll JQuery Plugin</title>
+  <meta property="og:title" content="Hamsterwheel : Infinite Scroll JQuery Plugin" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://polarnotion.github.io/hamsterwheel/" />
+  <meta property="og:image" content="images/hamsterwheel_meta.png" />
 
   <!-- Load local jQuery. -->
   <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
@@ -12,14 +18,36 @@
   <script src="./hamster-wheel.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
 
   <div>
 
-    <nav class="navbar">
-      <h1 class="nav-header">Hamster Wheel</h1>
-      <a href="Hamsterwheel.zip" class="btn btn-primary nav-btn">Get the Plugin!</a>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                 <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://polarnotion.github.io/hamsterwheel/">Hamster Wheel</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li>
+                        <a href="#" target="_blank"><i class="fa fa-product-hunt"></i> Upvote</a>
+                    </li> -->
+                    <li>
+                        <a href="#install">Install</a>
+                    </li>
+                        <a href="Hamsterwheel.zip" class="btn btn-white-outline navbar-btn">Try it!</a>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
 
     <header class="pad-section position-9">
@@ -31,7 +59,7 @@
       </div>
     </header>
 
-    <section id="new" class="pad-section background-white position-99">
+    <section id="new" class="pad-section">
       <div class="container">
 
         <h2 id="examples">What is this?</h2>
@@ -103,8 +131,65 @@ hamsterWheel.defaults = {
         <br>
 
       </div>
+
+         <section id="subscription_footer">
+        <div class="container container-md">
+            <h2 class="text-center">Get more free plugins.</h2>
+            <p class="text-center text-white lead">Let us send more free stuff, right to your inbox.</p>
+            <form class="jotform-form" action="https://submit.jotformpro.com/submit/61093322709958/" method="post" name="form_61093322709958" id="61093322709958" accept-charset="utf-8">
+                <input type="hidden" name="formID" value="61093322709958" />
+                <div class="form-all">
+                    <div class="form-section page-section">
+                        <!-- <div class="form-line form-group" data-type="control_textbox" id="id_4">
+              <label class="form-label form-label-top" id="label_4" for="input_4"> Name </label>
+              <div id="cid_4" class="form-input-wide jf-required">
+                <input type="text" class="form-control form-textbox" data-type="input-textbox" id="input_4" name="q4_name" size="20" value="" />
+              </div>
+            </div> -->
+                        <div class="form-line form-group jf-required" data-type="control_email" id="id_3">
+                            <label class="form-label form-label-top" id="label_3" for="input_3"> Email <span class="form-required"> * </span></label>
+                            <div id="cid_3" class="form-input-wide jf-required">
+                                <input type="email" class="form-control form-textbox validate[required, Email]" id="input_3" name="q3_email3" size="30" value="" />
+                            </div>
+                        </div>
+                        <div class="form-line form-group text-center" data-type="control_button" id="id_2">
+                            <div id="cid_2" class="form-input-wide">
+                                <div class="form-buttons-wrapper">
+                                    <button id="input_2" type="submit" class="form-submit-button btn btn-white-outline btn-lg"> Submit </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display:none">
+                            Should be Empty:
+                            <input type="text" name="website" value="" />
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" id="simple_spc" name="simple_spc" value="61093322709958" />
+                <script type="text/javascript">
+                document.getElementById("si" + "mple" + "_spc").value = "61093322709958-61093322709958";
+                </script>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center footer-background">
+        <div class="container">
+            <iframe src="https://ghbtns.com/github-btn.html?user=polarnotion&repo=hamsterwheel&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=polarnotion&type=follow&count=true&size=small" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+            <br>
+            <br>
+            <p class="text-size">
+                <a href="http://polarnotion.com/" class="text-white" target="_blank">
+          Built by Polar Notion
+          <br>
+          <em>Go Boldly Forward</em>
+        </a>
+            </p>
+        </div>
+    </footer>
     </section>
   </div>
+
   
   <script type="text/javascript">
     $('body').hamsterWheel();
