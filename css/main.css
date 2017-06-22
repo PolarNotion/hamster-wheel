@@ -162,6 +162,21 @@ a.text-primary:hover {
   color: #5CACFF;
 }
 
+.footer-background {
+  background-color: #111;
+  padding-top: 1cm;
+  padding-bottom: 1cm;
+}
+
+p.text-size {
+  font-size: 12px;
+}
+.text-white {
+  color: white; }
+
+a.text-white:hover {
+  color: white; }
+
 .nav-pills>li>a {
   border-radius: 4px;
   min-width: 100px;
